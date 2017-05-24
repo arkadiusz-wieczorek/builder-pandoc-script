@@ -1,0 +1,78 @@
+\usepackage[utf8]{inputenc}
+% \usepackage[polish]{babel}
+% \usepackage{polski}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{url}
+\hypersetup{colorlinks=false}
+\usepackage{substr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{pgfplots}
+\usepackage{makecell}
+\usepackage{diagbox}
+\usepackage{booktabs}
+\usepackage{mathspec}
+\usepackage{flexisym}
+\setcounter{secnumdepth}{2}
+\usepackage{listings}
+\usepackage{needspace}
+\usetikzlibrary{arrows.meta,
+                chains,
+				calc,
+                positioning,
+                shapes.geometric
+                }
+\makeatletter
+\g@addto@macro\normalsize{
+  \setlength\abovedisplayskip{3pt}
+  \setlength\belowdisplayskip{12pt}
+  \setlength\abovedisplayshortskip{3pt}
+  \setlength\belowdisplayshortskip{12pt}
+}
+\makeatother
+
+\definecolor{comment}{rgb}{0.67, 0.67, 0.69}
+\definecolor{linenumber}{rgb}{0.77, 0.77, 0.79}
+\definecolor{keyword}{rgb}{0.34, 0.56, 0.69}
+\definecolor{ndkeyword}{rgb}{0.38, 0.69, 0.66}
+\definecolor{javakeyword}{rgb}{0.88, 0.69, 0.36}
+\definecolor{string}{rgb}{0.67, 0.68, 0.28}
+\definecolor{meta}{rgb}{0.27, 0.27, 0.29}
+\definecolor{number}{rgb}{0.72, 0.55, 0.76}
+
+
+\lstdefinestyle{mystyle}{
+    keywords={typeof, new, true, const, let, false, catch, function, return, null, catch, switch, var, in, while, do, else, case, break, then, map, keys, sort, length, reduce, shift, pop, println},
+    keywordstyle=\color{keyword}\bfseries,
+    ndkeywords={class, export, boolean, throw, implements, import, this, Promise, Object, IF, FOR, TO, System, out},
+    ndkeywordstyle=\color{ndkeyword}\bfseries,
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{comment}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+    morestring=[b]',
+    morestring=[b]"
+    commentstyle=\color{comment},
+    keywordstyle=\color{keyword},
+    numberstyle=\tiny\ttfamily\color{linenumber},
+    stringstyle=\color{string},
+    basicstyle=\scriptsize\ttfamily\color{meta},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=10pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+\lstset{style=mystyle}
+\raggedbottom
+\sloppy
+
